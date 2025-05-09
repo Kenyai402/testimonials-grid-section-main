@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(214, 17%, 92%);
+  margin: 20px 20px;
+}
+.card-Daniel {
+  grid-area: Daniel;
+}
+.card-Jonathan {
+  grid-area: Jonathan;
+}
+.card-Jeanette {
+  grid-area: Jeanette;
+}
+.card-Patrick {
+  grid-area: Patrick;
+}
+.card-Kira {
+  grid-area: Kira;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(214, 17%, 92%);
+}
+.testimonial-card {
+  border-radius: 15px;
+  box-shadow: 0 20px 50px hsl(0, 2%, 66%);
+  padding: 10px;
+  line-height: 3vh;
+  font-size: 13px;
+}
+.info-container {
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.grid-container {
+  margin: 90px 100px;
+  display: grid;
+  min-width: 992px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "Daniel Daniel Jonathan Kira"
+    "Jeanette Patrick Patrick Kira";
+}
+
+.testimonial-card .image-container img {
+  border-radius: 50%;
+  border: solid 5px white;
+}
+
+.quotation {
+  /* margin-left: 60%; */
+  left: 70%;
+  position: absolute;
+  z-index: -1;
+  top: -0%;
+}
+
+blockquote {
+  font-weight: 500;
+}
+h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.card-Daniel {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  isolation: isolate;
+}
+
+.card-Jonathan {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card-Jeanette {
+  color: hsl(224, 10%, 45%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-Patrick {
+  color: hsl(0, 0%, 81%);
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card-Kira {
+  color: hsl(224, 10%, 45%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "Daniel Daniel"
+      "Jonathan Kira"
+      "Jeanette Patrick";
+  }
+  @media (max-width: 420px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+   
+    }
+    .testimonial-card {
+      width: 100%;
+      margin: 0 0px;
+    }
+    .quotation {
+      /* margin-left: 60%; */
+      left: 62%;
+      position: absolute;
+      z-index: -1;
+      top: -0%;
+    }
+    .card-Daniel {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(263, 55%, 52%);
+      position: relative;
+      isolation: isolate;
+    }
+
+  }
+  @media (min-width: 720px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      min-width: 30px;
+    }
+    .testimonial-card {
+      width: 30%;
+      margin: 0 0px;
+    }
+    .quotation {
+      /* margin-left: 60%; */
+      left: 62%;
+      position: absolute;
+      z-index: -1;
+      top: -0%;
+    }
+    .card-Daniel {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(263, 55%, 52%);
+      position: relative;
+      isolation: isolate;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.testimonial-card {
+  padding: 20px;
+}
+.testimonial-card .image-container img {
+  width: 50px;
+  height: 50px;
+}
+.testimonial-card h3 {
+  font-size: 18px;
+}
+.testimonial-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
